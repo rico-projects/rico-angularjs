@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../dist/rico-angular.js"></script>
+
+<body>
+<script>
+    var app = angular.module("MyApplication", ["Rico"]).config(function ($RicoConfigProvider) {
+        $dolphinConfigProvider.configure({
+            RICO_URL: "http://localhost:8080/todo-app/remoting"
+        });
+    });
+</script>
+
+
+
+<div ng-app="MyApplication" ng-controller="MyController">
+    <input type="text" name="input" ng-model="model.newItemText" ng-trim="false">
+    <button ng-click="add()">add</button>
+    <div ng-repeat="item in model.items">
+        {{item.text}}<input type="checkbox" ng-model="item.completed" ng-change="stateChanged(item.text)">
+    </div>
+</div>
+
+<script>
+    app.controller("MyController", function ($scope, clientContext) {
+        clientContext.connect();
+        clientContext.createController($scope, 'ToDoController').then(function (controllerProxy) {
+
+                $scope.$apply(function () {
+                    $scope.model.newItemText = 'angular';
+                });
+
+                $scope.add = function () {
+                    controllerProxy.invoke('add');
+                };
+
+                $scope.stateChanged = function (name) {
+                    controllerProxy.invoke('change', {'item': name});
+                };
+
+        });
+    });
+</script>
+
+</body>
+</html>
+
