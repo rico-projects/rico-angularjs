@@ -33,7 +33,7 @@
   ],
   "dependencies": {
     "angular": "1.6.9",
-    "rico-js": "1.0.0-CR.7",
+    "rico-js": "https://github.com/rico-project/rico-js.git#master",
     "core.js": "2.4.1"
   }
 }
