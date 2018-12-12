@@ -16,7 +16,7 @@
  */
 'use strict';
 var ricoClient = require('../bower_components/rico-js/dist/rico.js');
-window.ricoClient = ricoClient;
+window.client = ricoClient;
 angular.module('Rico', []);
 
 
