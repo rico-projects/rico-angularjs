@@ -1,6 +1,6 @@
 {
   "name": "rico-angularjs",
-  "version": "1.0.0-CR.7",
+  "version": "1.0.0-CR.3",
   "main": "./dist/rico-angular.js",
   "homepage": "https://github.com/rico-project/rico",
   "authors": [
@@ -33,7 +33,7 @@
   ],
   "dependencies": {
     "angular": "1.6.9",
-    "rico-js": "1.0.0-CR.1a",
+    "rico-js": "1.0.0-CR.3",
     "core.js": "2.4.1"
   }
 }
