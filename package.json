@@ -5,7 +5,7 @@
   "main": "./dist/rico-angular.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/canoo/rico-angularjs.git"
+    "url": "https://github.com/rico-project/rico-angularjs"
   },
   "author": "Hendrik Ebbers <hendrik.ebbers@karakun.com>",
   "license": "Apache-2.0",
