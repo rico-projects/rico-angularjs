@@ -5,9 +5,9 @@
 
 <body>
 <script>
-    var app = angular.module("MyApplication", ["Rico"]).config(function ($RicoConfigProvider) {
-        $dolphinConfigProvider.configure({
-            RICO_URL: "http://localhost:8080/todo-app/remoting"
+    var app = angular.module('MyApplication', ['Rico']).config(function ($ricoConfigProvider) {
+        $ricoConfigProvider.configure({
+            REMOTING_URL: 'http://localhost:8080/todo-app/remoting'
         });
     });
 </script>
