@@ -1,6 +1,6 @@
 {
   "name": "rico-angularjs",
-  "version": "1.0.0-CR.7",
+  "version": "1.0.0-CR.4",
   "description": "The AngularJS client of Rico.",
   "main": "./dist/rico-angular.js",
   "repository": {
@@ -9,6 +9,9 @@
   },
   "author": "Hendrik Ebbers <hendrik.ebbers@karakun.com>",
   "license": "Apache-2.0",
+  "scripts": {
+    "demo": "serve"
+  },
   "devDependencies": {
     "babel": "6.5.2",
     "babel-core": "6.26.0",
@@ -40,6 +43,7 @@
     "lodash.assign": "4.2.0",
     "mocha": "5.0.1",
     "phantomjs": "2.1.7",
+    "serve": "^10.1.1",
     "sinon": "4.3.0",
     "vinyl-buffer": "1.0.1",
     "vinyl-source-stream": "2.0.0",
