@@ -39,7 +39,7 @@
     "karma-mocha": "1.3.0",
     "karma-phantomjs-launcher": "1.0.4",
     "karma-sauce-launcher": "1.2.0",
-    "lodash": "4.17.5",
+    "lodash": "4.17.21",
     "lodash.assign": "4.2.0",
     "mocha": "5.0.1",
     "phantomjs": "2.1.7",
